@@ -52,6 +52,11 @@ Voice daemon for easyNav
     install_requires=[
         # add your dependencies here
         # remember to use 'package-name>=x.y.z,<x.y+1.0' notation (this way you get bugfixes)
+        "easyNav-pi-dispatcher",
+        "smokesignal>=0.5"
+    ],
+    dependency_links=[
+        "git+ssh://git@github.com:easyNav/easyNav-pi-dispatcher.git"
     ],
     extras_require={
         'tests': tests_require,
@@ -59,6 +64,7 @@ Voice daemon for easyNav
     entry_points={
         'console_scripts': [
             # add cli scripts here in this form:
+            'easyNav-pi-voice=easyNav_pi_voice.voiceDaemon:runMain'
             # 'easyNav-pi-voice=easyNav_pi_voice.cli:main',
         ],
     },

@@ -9,3 +9,4 @@
 # Copyright (c) 2014 Joel Tong me@joeltong.org
 
 from easyNav_pi_voice.version import __version__
+from easyNav_pi_voice.voiceDaemon import VoiceDaemon
